@@ -4,3 +4,24 @@ Description: A blog theme for personal trainers.
 Version: 1.0
 Author: Your Name
 */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.site-title {
+    margin: 0; /* Removes any default margin */
+    flex: 1; /* This allows it to take up any available space */
+}
+
+.site-title a {
+    color: inherit; /* Ensures link takes the color of the h1 tag */
+    text-decoration: none; /* Removes underlining */
+    font-size: 1.5em; /* Adjusts the size of the title */
+}
+
+.search-container {
+    flex: 0; /* This ensures the search bar doesn't grow and takes minimal space */
+}
