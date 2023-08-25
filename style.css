@@ -4,6 +4,8 @@ Description: A blog theme for personal trainers.
 Version: 1.0
 Author: Your Name
 */
+
+/* Header */
 .header-inner {
     display: flex;
     justify-content: space-between;
@@ -34,6 +36,35 @@ Author: Your Name
     color: #888; /* Makes the description a bit muted in comparison to the title. Adjust the color to your preference. */
 }
 
+/* Search form */
 .search-container {
-    flex: 0;
+    display: flex;
+    align-items: center; /* This will ensure vertical alignment of the form with any other item inside .header-inner, if any */
+}
+
+.search-form {
+    display: flex; /* Use flexbox to align the input and button inline */
+    align-items: center; /* Vertically aligns the input and button */
+    width: 100%; /* Utilize full width of its container */
+    margin: 0; /* Remove default margins */
+}
+
+.search-field {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    flex: 1; /* Allow it to take up available space */
+    margin-right: 5px; /* Space between the input and the button */
+}
+
+.search-submit {
+    padding: 5px 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.search-submit:hover {
+    background-color: #555;
 }
