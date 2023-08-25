@@ -120,3 +120,32 @@ Author: Your Name
 .read-more:hover {
     background-color: #005a87; /* A darker shade for hover */
 }
+
+/* Logo */
+body {
+    background-image: url('<?php echo get_theme_mod('custom_logo'); ?>'); /* fetch the custom logo URL set in WordPress customizer */
+    background-repeat: no-repeat;
+    background-position: center center; /* You can adjust this if you want it somewhere else on the page */
+    background-size: contain; /* Makes sure the logo maintains its aspect ratio */
+    background-attachment: fixed; /* Keeps the logo in the same spot even if you scroll */
+    background-color: #f4f4f4; /* This is a base color. Depending on the shade of green in your logo, you might want to adjust this */
+}
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(244, 244, 244, 0.95); /* This is a near-white color with 95% opacity. Adjusting the last value (0.95) will make the logo more or less subtle. */
+    pointer-events: none; /* This ensures that the overlay doesn't interfere with clicking on other elements. */
+    z-index: -1; /* Ensures the overlay is behind all content */
+}
+a, .btn, .highlight {
+    color: #YOUR_GREEN_COLOR; /* Replace with your logo's green color code */
+}
+
+a:hover, .btn:hover {
+    color: #DARKER_GREEN; /* A slightly darker shade for hover effects. Replace accordingly. */
+}
