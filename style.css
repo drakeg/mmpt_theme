@@ -68,3 +68,55 @@ Author: Your Name
 .search-submit:hover {
     background-color: #555;
 }
+
+// Blog Post list
+.blog-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.blog-snippet {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.blog-snippet:hover {
+    background-color: #f9f9f9;
+}
+
+.post-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.post-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.post-title a:hover {
+    color: #0073aa; /* A typical WordPress blue, you can change this */
+}
+
+.post-excerpt {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #0073aa;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #005a87; /* A darker shade for hover */
+}
