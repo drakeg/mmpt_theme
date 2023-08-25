@@ -8,9 +8,15 @@
 </head>
 <body <?php body_class(); ?>>
     <header>
-        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-        <h2><?php bloginfo('description'); ?></h2>
-        
-        <!-- Search Form -->
-        <?php get_search_form(); ?>
+        <div class="header-inner">
+            <div class="title-description-container">
+                <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                <p class="site-description"><?php bloginfo('description'); ?></p>
+            </div>
+            
+            <!-- Search Form -->
+            <div class="search-container">
+                <?php get_search_form(); ?>
+            </div>
+        </div>
     </header>
