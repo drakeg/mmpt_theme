@@ -306,17 +306,13 @@ a:hover, .btn:hover {
         margin-bottom: 10px; /* Some space between the icon and search bar */
     }
 
-    /* Adjust search container for mobile */
-    .search-container {
-        flex-direction: column;
-    }
-
     .search-icon {
         cursor: pointer;
         z-index: 2;
     }
 
     .search-container {
+        display: none;
         position: absolute; /* Position search container absolutely */
         top: 0; /* Align it to the top of the header */
         right: 0; /* Align it to the right of the header */
@@ -329,6 +325,7 @@ a:hover, .btn:hover {
     }
 
     .search-container.active {
+        display: flex;
         transform: translateX(0); /* Slide in when active */
     }
 
