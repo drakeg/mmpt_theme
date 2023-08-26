@@ -31,19 +31,31 @@ a {
 
 .site-title {
     margin: 0;
+    margin-bottom: 0.5em;
     flex: 1;
 }
 
 .site-title a {
-    color: inherit;
+    font-family: 'Lato', sans-serif; /* Roboto Slab for headings */
+    font-weight: 600; /* Bold weight */
+    color: #4CAF50; /* Green color to match the theme */
     text-decoration: none;
     font-size: 1.5em;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.site-title a:hover {
+    color: #45a049; /* Slightly darker green for hover effect */
 }
 
 .site-description {
-    margin-top: 5px; /* Adds a little space between title and description */
-    font-size: 0.9em; /* Adjusts the size of the description */
-    color: #888; /* Makes the description a bit muted in comparison to the title. Adjust the color to your preference. */
+    font-family: 'Open Sans', sans-serif; /* Roboto for general text */
+    font-weight: 300; /* Regular weight */
+    color: #666; /* Dark gray for a subtle look */
+    font-size: 1.1em; /* Adjust the size as required */
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 0.5em;
 }
 
 .search-container {
