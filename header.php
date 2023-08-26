@@ -7,6 +7,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <div id="wptime-plugin-preloader"></div>
     <header>
         <div class="header-inner">
             <div class="title-description-container">
