@@ -285,6 +285,7 @@ a:hover, .btn:hover {
     }
 
     .site-title {
+        margin-top: 5em;
         font-size: 1.2em; /* Adjust font size for title */
     }
 
@@ -316,7 +317,7 @@ a:hover, .btn:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 0px;
         z-index: 1;
         position: fixed;
     }
