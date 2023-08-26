@@ -36,7 +36,20 @@ add_action('after_setup_theme', 'your_theme_setup');
  * Enqueue scripts and styles for the front end.
  */
 function theme_enqueue_styles() {
+    // Enqueue your main stylesheet
     wp_enqueue_style('main-style', get_stylesheet_uri());
+
+    // Get logo URL
+    $custom_logo_id = get_theme_mod('custom_logo');
+    $logo = wp_get_attachment_image_src($custom_logo_id , 'full');
+    $logo_url = $logo[0];
+
+    // Create the CSS
+    $inline_style = 'body { background-image: url(' . esc_url($logo_url) . '); }';
+
+    // Add the inline style
+    wp_add_inline_style('main-style', $inline_style);
 }
+
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 ?>
