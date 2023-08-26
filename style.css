@@ -120,8 +120,18 @@ a {
     background-color: #45a049; /* A darker green on hover */
 }
 
-
 /* Blog snippet styling */
+/* Blog Post Title Styles */
+.post-card h2 a {
+    color: #4CAF50; /* Green color to match the theme */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.post-card h2 a:hover {
+    color: #45a049; /* Slightly darker green for hover effect */
+}
+
 .post-cards {
     display: flex;
     flex-wrap: wrap;
@@ -196,6 +206,39 @@ div {
 
 .more-link:hover {
     background-color: #4CAF50; /* A slightly darker shade for hover effects. Replace accordingly. */
+}
+
+/* Add spacing above the pagination */
+.wp-pagenavi {
+    margin-top: 40px;  /* Adjust as needed */
+    text-align: center;  /* Center align the pagination */
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+    padding: 8px 12px;
+    margin: 0 3px;
+    border-radius: 4px;
+    border: 1px solid #4CAF50; /* Green color to match the theme */
+    color: #4CAF50;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style for the current page number */
+.wp-pagenavi span.current {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hover effect for pagination links */
+.wp-pagenavi a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Optional: Style for disabled prev/next links, if you're using them */
+.wp-pagenavi span.pages, .wp-pagenavi a:disabled, .wp-pagenavi span.extend {
+    color: #ccc;  /* Light grey color for disabled or informational text */
 }
 
 /* Logo background styling */

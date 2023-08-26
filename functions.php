@@ -32,6 +32,11 @@ function your_theme_setup() {
 }
 add_action('after_setup_theme', 'your_theme_setup');
 
+function theme_enqueue_fonts() {
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap', false);
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_fonts');
+
 /**
  * Limit the number of posts returned per page
  */
