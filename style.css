@@ -315,8 +315,6 @@ a:hover, .btn:hover {
     }
 
     .search-container {
-        top: 0;
-        left: 0;
         width: 100%; /* Take up 90% of the top width */
         display: flex;
         align-items: center;
