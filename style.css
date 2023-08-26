@@ -96,21 +96,6 @@ a {
     border-right: none; /* Remove right border to blend with the button */
 }
 
-.search-submit {
-    padding: 0 20px;  /* Adjust padding for the button */
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
-}
-
-.search-submit:hover {
-    background-color: #45a049;
-}
-
-
 /* Reset the appearance of the button */
 .search-submit {
     background-color: #4CAF50; /* Green background color */
