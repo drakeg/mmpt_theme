@@ -62,11 +62,8 @@ a {
     flex: 0;
 }
 
-.site-description {
-    clear: both;
-    font-size: 18px;
-    color: #888;
-    padding-top: 5px;
+.search-icon {
+    display: none;
 }
 
 /* Search form styles */
