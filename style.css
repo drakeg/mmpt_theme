@@ -319,7 +319,6 @@ a:hover, .btn:hover {
         justify-content: center;
         padding: 0px;
         z-index: 1;
-        position: fixed;
     }
 
     .search-submit {
