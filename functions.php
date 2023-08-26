@@ -33,6 +33,16 @@ function your_theme_setup() {
 add_action('after_setup_theme', 'your_theme_setup');
 
 /**
+ * Enqueue JQuery and custom JavaScript file
+ */
+function theme_enqueue_scripts() {
+    wp_enqueue_script('jquery');
+
+    wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/js/script.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+
+/**
  * Enqueue scripts and styles for the front end.
  */
 function theme_enqueue_styles() {

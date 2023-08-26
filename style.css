@@ -42,6 +42,25 @@ a {
     margin-right: 5px;
 }
 
+/* Reset the appearance of the button */
+.search-submit {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Some padding for space */
+    border: none; /* Remove default borders */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer when hovering */
+    transition: 0.3s; /* Transition effect for hover */
+    font-weight: bold; /* Bold font */
+    outline: none; /* Remove focus outline */
+}
+
+/* Hover effect */
+.search-submit:hover {
+    background-color: #45a049; /* A darker green on hover */
+}
+
+
 /* Blog snippet styling */
 h2 {
     font-size: 24px;
@@ -54,7 +73,7 @@ h2 a {
 }
 
 h2 a:hover {
-    color: #YOUR_GREEN_COLOR; /* replace with your specific shade of green */
+    color: #4CAF50; /* replace with your specific shade of green */
 }
 
 div {
@@ -64,7 +83,7 @@ div {
 }
 
 .more-link {
-    background-color: #YOUR_GREEN_COLOR; /* replace with your specific shade of green */
+    background-color: #4CAF50; /* replace with your specific shade of green */
     padding: 5px 10px;
     display: inline-block;
     color: #fff;
@@ -72,7 +91,7 @@ div {
 }
 
 .more-link:hover {
-    background-color: #DARKER_GREEN; /* A slightly darker shade for hover effects. Replace accordingly. */
+    background-color: #4CAF50; /* A slightly darker shade for hover effects. Replace accordingly. */
 }
 
 /* Logo background styling */
@@ -100,9 +119,9 @@ body::before {
 
 /* Green accent styling */
 a, .btn, .highlight {
-    color: #YOUR_GREEN_COLOR; /* Replace with your logo's green color code */
+    color: #45a049; /* Replace with your logo's green color code */
 }
 
 a:hover, .btn:hover {
-    color: #DARKER_GREEN; /* A slightly darker shade for hover effects. Replace accordingly. */
+    color: #4CAF50; /* A slightly darker shade for hover effects. Replace accordingly. */
 }
