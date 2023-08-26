@@ -1,135 +1,90 @@
-/*
-Theme Name: Personal Trainer Blog
-Description: A blog theme for personal trainers.
+/* 
+Theme Name: Personal Trainer
+Theme URI: http://your-theme-url.com
+Author: Greg Drake
+Author URI: http://your-author-url.com
+Description: Description of your theme.
 Version: 1.0
-Author: Your Name
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: your-theme-text-domain
 */
 
-/* Header */
-.header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.title-description-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.site-title {
-    margin: 0;
-    flex: 1;
-}
-
-.site-title a {
-    color: inherit;
+/* Reset hyperlink underlining */
+a {
     text-decoration: none;
-    font-size: 1.5em;
+}
+
+/* Main header styles */
+.site-title {
+    float: left;
+    font-size: 24px;
+}
+
+.search-container {
+    float: right;
 }
 
 .site-description {
-    margin-top: 5px; /* Adds a little space between title and description */
-    font-size: 0.9em; /* Adjusts the size of the description */
-    color: #888; /* Makes the description a bit muted in comparison to the title. Adjust the color to your preference. */
+    clear: both;
+    font-size: 18px;
+    color: #888;
+    padding-top: 5px;
 }
 
-/* Search form */
-.search-container {
+/* Search form styles */
+.search-container form {
     display: flex;
-    align-items: center; /* This will ensure vertical alignment of the form with any other item inside .header-inner, if any */
+    align-items: center;
 }
 
-.search-form {
-    display: flex; /* Use flexbox to align the input and button inline */
-    align-items: center; /* Vertically aligns the input and button */
-    width: 100%; /* Utilize full width of its container */
-    margin: 0; /* Remove default margins */
+.search-container input[type="text"] {
+    margin-right: 5px;
 }
 
-.search-field {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    flex: 1; /* Allow it to take up available space */
-    margin-right: 5px; /* Space between the input and the button */
-}
-
-.search-submit {
-    padding: 5px 15px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.search-submit:hover {
-    background-color: #555;
-}
-
-// Blog Post list
-.blog-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-.blog-snippet {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 20px 0;
-    margin: 20px 0;
-    transition: background-color 0.3s;
-}
-
-.blog-snippet:hover {
-    background-color: #f9f9f9;
-}
-
-.post-title {
-    font-size: 1.5em;
+/* Blog snippet styling */
+h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.post-title a {
-    color: #333;
-    text-decoration: none;
+h2 a {
+    color: #333; /* or any other color you prefer */
     transition: color 0.3s;
 }
 
-.post-title a:hover {
-    color: #0073aa; /* A typical WordPress blue, you can change this */
+h2 a:hover {
+    color: #YOUR_GREEN_COLOR; /* replace with your specific shade of green */
 }
 
-.post-excerpt {
-    color: #777;
+div {
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.read-more {
+.more-link {
+    background-color: #YOUR_GREEN_COLOR; /* replace with your specific shade of green */
+    padding: 5px 10px;
     display: inline-block;
-    padding: 5px 15px;
-    border: 1px solid #0073aa;
-    background-color: #0073aa;
     color: #fff;
-    text-decoration: none;
     transition: background-color 0.3s;
 }
 
-.read-more:hover {
-    background-color: #005a87; /* A darker shade for hover */
+.more-link:hover {
+    background-color: #DARKER_GREEN; /* A slightly darker shade for hover effects. Replace accordingly. */
 }
 
-/* Logo */
+/* Logo background styling */
 body {
-    background-image: url('<?php echo get_theme_mod('custom_logo'); ?>'); /* fetch the custom logo URL set in WordPress customizer */
+    background-image: url('PATH_TO_YOUR_LOGO'); /* You'll replace this with the PHP code to dynamically fetch the logo, or replace manually with the path to your logo */
     background-repeat: no-repeat;
-    background-position: center center; /* You can adjust this if you want it somewhere else on the page */
-    background-size: contain; /* Makes sure the logo maintains its aspect ratio */
-    background-attachment: fixed; /* Keeps the logo in the same spot even if you scroll */
-    background-color: #f4f4f4; /* This is a base color. Depending on the shade of green in your logo, you might want to adjust this */
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: #f4f4f4;
 }
+
 body::before {
     content: "";
     display: block;
@@ -138,10 +93,12 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(244, 244, 244, 0.95); /* This is a near-white color with 95% opacity. Adjusting the last value (0.95) will make the logo more or less subtle. */
-    pointer-events: none; /* This ensures that the overlay doesn't interfere with clicking on other elements. */
-    z-index: -1; /* Ensures the overlay is behind all content */
+    background-color: rgba(244, 244, 244, 0.95);
+    pointer-events: none;
+    z-index: -1;
 }
+
+/* Green accent styling */
 a, .btn, .highlight {
     color: #YOUR_GREEN_COLOR; /* Replace with your logo's green color code */
 }
