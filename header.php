@@ -1,9 +1,11 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width">
     <title><?php bloginfo('name'); ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -15,6 +17,10 @@
                 <p class="site-description"><?php bloginfo('description'); ?></p>
             </div>
             
+            <!-- Search Toggle Icon -->
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+            </div>
             <!-- Search Form -->
             <div class="search-container">
                 <?php get_search_form(); ?>

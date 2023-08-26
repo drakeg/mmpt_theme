@@ -282,3 +282,42 @@ a, .btn, .highlight {
 a:hover, .btn:hover {
     color: #4CAF50; /* A slightly darker shade for hover effects. Replace accordingly. */
 }
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+
+    /* Reduce site title and description size on mobile */
+    .site-title a {
+        font-size: 1.2em;
+    }
+
+    .site-description {
+        font-size: 0.9em;
+    }
+
+    /* Blog post cards on mobile */
+    .blog-card {
+        flex-direction: column; /* Stack card content vertically */
+        padding: 10px;
+    }
+
+    .blog-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-card-content {
+        margin-top: 10px;
+    }
+
+    /* Adjust search container for mobile */
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container input[type="text"],
+    .search-container input[type="submit"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
