@@ -68,6 +68,10 @@ a {
     margin-left: 20px;
 }
 
+.search-container.active {
+    display: flex; /* Show search container when active */
+}
+
 .search-icon {
     display: none;
     cursor: pointer;
@@ -274,29 +278,22 @@ a:hover, .btn:hover {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-
-    /* Reduce site title and description size on mobile */
-    .site-title a {
-        font-size: 1.2em;
+    .site-title {
+        font-size: 1.2em; /* Adjust font size for title */
     }
 
     .site-description {
-        font-size: 0.9em;
+        font-size: 0.9em; /* Adjust font size for description */
     }
 
     /* Blog post cards on mobile */
-    .blog-card {
-        flex-direction: column; /* Stack card content vertically */
-        padding: 10px;
+    .post-cards {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 15px; /* Adjust spacing between stacked cards */
     }
 
-    .blog-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .blog-card-content {
-        margin-top: 10px;
+    .post-card {
+        flex-basis: 100%; /* Make cards take up full width in mobile */
     }
 
     .search-icon {
@@ -312,10 +309,10 @@ a:hover, .btn:hover {
     .search-icon {
         cursor: pointer;
     }
-    
+
     .search-container {
-        display: none; /* Hidden by default */
-        transition: all 0.3s; /* Smooth transition */
+        display: none; /* Hide search container by default */
+        flex-direction: column;
     }
 
     .search-container input[type="text"],

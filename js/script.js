@@ -4,15 +4,11 @@ jQuery(document).ready(function($) {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var searchIcon = document.querySelector(".search-icon");
-    var searchContainer = document.querySelector(".search-container");
+document.addEventListener('DOMContentLoaded', function () {
+    const searchIcon = document.querySelector('.search-icon');
+    const searchContainer = document.querySelector('.search-container');
 
-    searchIcon.addEventListener("click", function() {
-        if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-            searchContainer.style.display = "block";
-        } else {
-            searchContainer.style.display = "none";
-        }
+    searchIcon.addEventListener('click', function () {
+        searchContainer.classList.toggle('active');
     });
 });
