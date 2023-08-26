@@ -311,10 +311,19 @@ a:hover, .btn:hover {
         display: block;
         margin-bottom: 10px; /* Some space between the icon and search bar */
     }
-    
+
     /* Adjust search container for mobile */
     .search-container {
         flex-direction: column;
+    }
+
+    .search-icon {
+        cursor: pointer;
+    }
+    
+    .search-container {
+        display: none; /* Hidden by default */
+        transition: all 0.3s; /* Smooth transition */
     }
 
     .search-container input[type="text"],
