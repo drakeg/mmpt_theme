@@ -12,14 +12,15 @@
     <div id="wptime-plugin-preloader"></div>
     <header>
         <div class="header-inner">
-            <div class="title-description-container">
-                <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-                <p class="site-description"><?php bloginfo('description'); ?></p>
-            </div>
-            
-            <!-- Search Toggle Icon -->
-            <div class="search-icon">
-                <i class="fa fa-search"></i>
+            <div class="title-search-container">
+                <div class="title-description-container">
+                    <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <p class="site-description"><?php bloginfo('description'); ?></p>
+                </div>
+                <!-- Search Toggle Icon -->
+                <div class="search-icon">
+                    <i class="fa fa-search"></i>
+                </div>
             </div>
             <!-- Search Form -->
             <div class="search-container">
@@ -27,3 +28,4 @@
             </div>
         </div>
     </header>
+
