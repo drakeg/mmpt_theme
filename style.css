@@ -344,10 +344,4 @@ a:hover, .btn:hover {
         font-weight: bold;
         cursor: pointer;
     }
-
-    .search-container input[type="text"],
-    .search-container input[type="submit"] {
-        width: 100%;
-        margin: 5px 0;
-    }
 }
