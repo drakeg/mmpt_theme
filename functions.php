@@ -33,6 +33,16 @@ function your_theme_setup() {
 add_action('after_setup_theme', 'your_theme_setup');
 
 /**
+ * Limit the number of posts returned per page
+ */
+function custom_posts_per_page($query) {
+    if ($query->is_home() && $query->is_main_query()) {
+        $query->set('posts_per_page', 6); // Adjust the number to your preference
+    }
+}
+add_action('pre_get_posts', 'custom_posts_per_page');
+
+/**
  * Enqueue JQuery and custom JavaScript file
  */
 function theme_enqueue_scripts() {

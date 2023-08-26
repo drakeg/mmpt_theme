@@ -67,6 +67,41 @@ a {
     margin-right: 5px;
 }
 
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-field, .search-submit {
+    font-size: 16px;  /* Set a consistent font size */
+    line-height: 1;   /* Set a consistent line height */
+    height: 40px;     /* Define a specific height */
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-field {
+    flex-grow: 1;       /* Allow the text box to grow and use available space */
+    padding: 10px 15px; /* Padding for the text box */
+    border: 1px solid #ccc;
+    border-right: none; /* Remove right border to blend with the button */
+}
+
+.search-submit {
+    padding: 0 20px;  /* Adjust padding for the button */
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.search-submit:hover {
+    background-color: #45a049;
+}
+
+
 /* Reset the appearance of the button */
 .search-submit {
     background-color: #4CAF50; /* Green background color */
@@ -87,6 +122,50 @@ a {
 
 
 /* Blog snippet styling */
+.post-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* spacing between cards */
+    justify-content: space-between;
+}
+
+.post-card {
+    flex-basis: calc(33.33% - 20px);  /* Make it 3 cards in a row, adjust as needed */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden; /* For rounded corners on images */
+    transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #45a049;
+}
+
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
