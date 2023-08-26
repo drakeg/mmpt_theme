@@ -121,7 +121,6 @@ div {
 
 /* Logo background styling */
 body {
-    background-image: url('PATH_TO_YOUR_LOGO'); /* You'll replace this with the PHP code to dynamically fetch the logo, or replace manually with the path to your logo */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
