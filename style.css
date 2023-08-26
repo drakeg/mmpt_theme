@@ -307,6 +307,11 @@ a:hover, .btn:hover {
         margin-top: 10px;
     }
 
+    .search-icon {
+        display: block;
+        margin-bottom: 10px; /* Some space between the icon and search bar */
+    }
+    
     /* Adjust search container for mobile */
     .search-container {
         flex-direction: column;
