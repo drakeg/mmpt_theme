@@ -18,10 +18,21 @@
                     <p class="site-description"><?php bloginfo('description'); ?></p>
                 </div>
             </div>
-            <!-- Search Form -->
-            <div class="search-container">
-                <?php get_search_form(); ?>
-            </div>
+            <!-- Add this code where you want the menu to appear in header.php -->
+            <nav class="main-navigation">
+                <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'header-menu',
+                        'container'      => false,
+                        'menu_class'     => 'header-menu-list',
+                        'fallback_cb'    => false
+                    ) );
+                ?>
+                        <!-- Search Form -->
+                <div class="search-container">
+                    <?php get_search_form(); ?>
+                </div>
+            </nav>
         </div>
     </header>
 
