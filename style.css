@@ -63,7 +63,9 @@ a {
 }
 
 .main-navigation {
-    background-color: #333;
+    background-color: transparent; /* Removing the #333 background color */
+    text-align: center; /* Centering the menu items */
+    margin-top: 15px;  /* Adding some top margin for separation */
 }
 
 .header-menu-list {
