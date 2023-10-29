@@ -62,6 +62,30 @@ a {
     margin: 0;
 }
 
+.main-navigation {
+    background-color: #333;
+}
+
+.header-menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-menu-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.header-menu-list li a:hover {
+    background-color: #555;
+}
+
 .search-container {
     display: flex;
     align-items: center;
