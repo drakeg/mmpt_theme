@@ -26,7 +26,7 @@ function your_theme_setup() {
 
     // Register primary menu (you can add more if required).
     register_nav_menus(array(
-        'primary' => __('Primary Menu', 'your-theme-text-domain'),
+        'header-menu' => __('Primary Menu', 'your-theme-text-domain'),
     ));
 
 }
