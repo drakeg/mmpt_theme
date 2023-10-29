@@ -68,24 +68,36 @@ a {
     margin-top: 15px;  /* Adding some top margin for separation */
 }
 
-.header-menu-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.header-menu-list li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
+/* Adjusting Navbar Menu Items Color */
 .header-menu-list li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
+    color: #333; /* Changing from white to a dark color for visibility */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
+/* Adjusting Navbar Menu Items Hover Color */
 .header-menu-list li a:hover {
-    background-color: #555;
+    color: #4CAF50; /* Green color from your theme for hover */
+    background-color: transparent; /* Remove the #555 background on hover */
+}
+
+/* Adjusting Navbar Menu Current Item Color */
+.header-menu-list li.current-menu-item a {
+    color: #4CAF50; /* Green color from your theme for the active menu item */
+}
+
+/* Adjusting Navbar Submenu */
+.header-menu-list li ul.sub-menu {
+    background-color: #f4f4f4; /* Light gray background for submenu */
+    border: 1px solid #e0e0e0; /* Border for submenu */
+}
+
+.header-menu-list li ul.sub-menu a {
+    color: #333; /* Dark color for submenu items */
+}
+
+.header-menu-list li ul.sub-menu a:hover {
+    color: #4CAF50; /* Green color from your theme for submenu hover */
+    background-color: #e8e8e8; /* Slightly darker background for submenu hover */
 }
 
 .search-container {
