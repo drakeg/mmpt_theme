@@ -18,7 +18,7 @@
                 <p class="site-description"><?php bloginfo('description'); ?></p>
             </div>
             <!-- Navigation & Search -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg">
                 <!-- Navbar content -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <?php
@@ -26,7 +26,7 @@
                         'theme_location' => 'header-menu',
                         'depth'          => 2,
                         'container'      => false,
-                        'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
+                        'menu_class'     => 'navbar-nav me-auto',
                         'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
                         'walker'         => new WP_Bootstrap_Navwalker()
                     ));
