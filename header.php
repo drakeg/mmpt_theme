@@ -5,8 +5,6 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php bloginfo('name'); ?></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <?php wp_head(); ?>
 </head>
 
@@ -26,9 +24,11 @@
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
+                        'depth'          => 2,
                         'container'      => false,
                         'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
-                        'fallback_cb'    => false
+                        'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'         => new WP_Bootstrap_Navwalker()
                     ));
                     ?>
                     <!-- Search Form -->
