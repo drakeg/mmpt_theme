@@ -63,7 +63,7 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 function theme_enqueue_styles() {
     // Enqueue your main stylesheet
     wp_enqueue_style('main-style', get_stylesheet_uri());
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN');
+    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
     wp_enqueue_style('fontawesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
     // Get logo URL
     $custom_logo_id = get_theme_mod('custom_logo');
