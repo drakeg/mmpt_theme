@@ -69,6 +69,20 @@ a {
     margin: 0;
 }
 
+/* Navbar styling (override Bootstrap) */
+.navbar {
+    padding: 0.5rem 1rem; /* Adjust these values as per your requirement */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #45a049; /* Default color of the menu items */
+    transition: color 0.3s ease; /* Smooth transition effect on hover */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Color of the menu items on hover (Gold in this case) */
+}
+
 /* Blog snippet styling */
 /* Blog Post Title Styles */
 .post-card h2 a {
