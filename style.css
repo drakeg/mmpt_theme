@@ -62,68 +62,70 @@ a {
     margin: 0;
 }
 
+/* Styling for the main navigation */
+
 .main-navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4CAF50; /* Removing the #333 background color */
-    text-align: center; /* Centering the menu items */
-    margin-top: 15px;  /* Adding some top margin for separation */
-    padding: 10px 20px;
+    justify-content: space-between; /* This will push the menu to the left and search to the right */
+    align-items: center; /* This will vertically center align the items */
+    background-color: #4CAF50; /* Green background as per your request */
+    padding: 10px 20px; /* Some spacing around the navbar */
+    width: 100%; /* Ensure the navbar takes the full width */
 }
 
-/* Menu container styling */
 .header-menu-list {
-    list-style-type: none;  /* Remove default list styles */
-    padding: 0;  /* Remove default padding */
-    margin: 0;  /* Remove default margin */
-    display: flex;  /* Make the list items display horizontally */
-    align-items: center;  /* Align the items vertically in the center */
-    justify-content: center;  /* Center the list items horizontally */
+    display: flex; /* Makes the list items sit side by side */
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
 }
 
-/* Individual menu items styling */
 .header-menu-list li {
-    margin: 0 10px;  /* Some space between each menu item */
+    margin: 0 15px; /* Adds some space between menu items */
 }
 
 .header-menu-list li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-size: 1.2em;
-    transition: text-shadow 0.3s;
+    color: #fff; /* White text color for menu links */
+    text-decoration: none; /* Removes underlines */
+    padding: 5px 15px; /* Some padding to make the links larger and more clickable */
+    font-size: 1.2em; /* Increases the font size */
+    transition: box-shadow 0.3s; /* A smooth transition for hover effects */
 }
 
 .header-menu-list li a:hover {
-    text-shadow: 10px 10px 10px lightgreen;
-    filter: drop-shadow(color=#000, offx=2, offy=2)
+    box-shadow: 0 0 15px #fff; /* Creates a glow effect on hover */
 }
 
-/* Reset for submenu to appear vertically */
-.header-menu-list li ul.sub-menu {
-    display: none;  /* Hide the submenu by default */
-    position: absolute;  /* To show submenu above other content */
-    top: 100%;  /* Position submenu right below the main menu item */
-    left: 0;  /* Align submenu to the left of the main menu item */
-    list-style-type: none;  /* Remove default list styles */
-    padding: 0;  /* Remove default padding */
-    flex-direction: column;  /* Make the submenu items display vertically */
-}
-
-.header-menu-list li:hover ul.sub-menu {
-    display: flex;  /* Show the submenu when hovering over a menu item */
-}
-
-/* Styling for submenu items */
-.header-menu-list li ul.sub-menu li {
-    margin: 0;  /* Reset margin for submenu items */
-}
+/* Styling for the search container */
 
 .search-container {
+    margin-left: auto; /* This will push the search to the right end of the navbar */
+}
+
+.search-container form {
     display: flex;
-    align-items: center;
-    margin-left: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 5px 10px; /* Makes the search box taller and more visible */
+    font-size: 1em; /* Adjusts the font size of the search input */
+    border: none; /* Removes default borders */
+    border-radius: 3px 0 0 3px; /* Rounded corners on the left side */
+    background-color: #fff; /* White background for the search input */
+    color: #4CAF50; /* Green text to match the navbar background */
+}
+
+.search-container input[type="submit"] {
+    background-color: #fff; /* White background for the search icon button */
+    border: none; /* Removes default borders */
+    cursor: pointer; /* Indicates it's clickable */
+    border-radius: 0 3px 3px 0; /* Rounded corners on the right side */
+    color: #4CAF50; /* Green color to match the navbar background */
+}
+
+/* On hover, make the search button slightly opaque */
+.search-container input[type="submit"]:hover {
+    opacity: 0.8;
 }
 
 .search-container.active {
