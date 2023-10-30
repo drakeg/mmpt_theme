@@ -33,11 +33,10 @@ a {
     box-sizing: border-box;
 }
 
-.title-search-container {
+.nav-search-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
 }
 
 .title-description-container {
@@ -81,6 +80,14 @@ a {
     flex-wrap: wrap;
     background-color: #45a049;
     width: 100%;
+}
+
+.main-navigation, .search-container {
+    display: inline-block;
+}
+
+.search-container {
+    width: 300px;
 }
 
 .header-menu-list {

@@ -19,7 +19,7 @@
                 <p class="site-description"><?php bloginfo('description'); ?></p>
             </div>
             <!-- Navigation & Search -->
-            <div class="title-search-container">
+            <div class="nav-search-container">
                 <nav class="main-navigation">
                     <?php
                     wp_nav_menu(array(
