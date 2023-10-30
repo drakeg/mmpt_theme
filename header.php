@@ -13,15 +13,21 @@
 <body <?php body_class(); ?>>
     <div id="wptime-plugin-preloader"></div>
     <header>
-        <div class="header-inner">
+        <div class="header-inner container">
             <!-- Title & Description -->
-            <div class="title-description-container">
+            <div class="title-description-container mb-3">
                 <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
                 <p class="site-description"><?php bloginfo('description'); ?></p>
             </div>
             <!-- Navigation & Search -->
-            <div class="nav-search-container">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- Toggler for mobile devices -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
@@ -34,7 +40,7 @@
                     <div class="search-container">
                         <?php get_search_form(); ?>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
