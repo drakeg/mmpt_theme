@@ -80,6 +80,7 @@ a {
 .main-navigation {
     flex-wrap: wrap;
     background-color: #45a049;
+    width: 100%;
 }
 
 .header-menu-list {
@@ -87,7 +88,6 @@ a {
     list-style: none; /* Removes bullet points */
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
-    background-color: #45a049;
 }
 
 .header-menu-list li {
