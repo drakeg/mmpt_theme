@@ -21,7 +21,7 @@
             </div>
             <!-- Navigation & Search -->
             <div class="nav-search-container">
-                <nav class="main-navigation">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
