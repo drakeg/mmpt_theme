@@ -32,7 +32,7 @@
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
                         'container'      => false,
-                        'menu_class'     => 'header-menu-list',
+                        'menu_class'     => 'navbar-nav mr-auto',
                         'fallback_cb'    => false
                     ));
                     ?>
