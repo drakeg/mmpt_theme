@@ -18,7 +18,6 @@ Text Domain: your-theme-text-domain
 }
 
 body {
-    margin: 0;
     font-family: 'Open Sans', sans-serif; /* or whatever default font you want */
 }
 
@@ -30,7 +29,6 @@ a {
 /* Main header styles */
 .header-inner {
     max-width: 100%;
-    box-sizing: border-box;
 }
 
 .nav-search-container {
@@ -80,37 +78,6 @@ a {
     flex-wrap: wrap;
     background-color: #45a049;
     width: 100%;
-}
-
-.main-navigation, .search-container {
-    display: inline-block;
-}
-
-.search-container {
-    width: 300px;
-}
-
-.header-menu-list {
-    display: flex; /* Makes the list items sit side by side */
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-}
-
-.header-menu-list li {
-    margin: 0 15px; /* Adds some space between menu items */
-}
-
-.header-menu-list li a {
-    color: #fff; /* White text color for menu links */
-    text-decoration: none; /* Removes underlines */
-    padding: 5px 15px; /* Some padding to make the links larger and more clickable */
-    font-size: 1.2em; /* Increases the font size */
-    transition: box-shadow 0.3s; /* A smooth transition for hover effects */
-}
-
-.header-menu-list li a:hover {
-    box-shadow: 0 0 15px #fff; /* Creates a glow effect on hover */
 }
 
 /* Blog snippet styling */
