@@ -75,11 +75,11 @@ a {
 /* Styling for the main navigation */
 .main-content {
     margin: 0 20px;
-    background-color:  #45a049;
 }
 
 .main-navigation {
     flex-wrap: wrap;
+    background-color: #45a049;
 }
 
 .header-menu-list {
