@@ -20,19 +20,14 @@
                 <p class="site-description"><?php bloginfo('description'); ?></p>
             </div>
             <!-- Navigation & Search -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <!-- Toggler for mobile devices -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <!-- Navbar content -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
                         'container'      => false,
-                        'menu_class'     => 'navbar-nav mr-auto',
+                        'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
                         'fallback_cb'    => false
                     ));
                     ?>
