@@ -137,53 +137,6 @@ a {
     cursor: pointer;
 }
 
-/* Search form styles */
-.search-container form {
-    display: flex;
-    align-items: center;
-}
-
-.search-container input[type="text"] {
-    margin-right: 5px;
-}
-
-.search-form {
-    display: flex;
-    align-items: center;
-}
-
-.search-field, .search-submit {
-    font-size: 16px;  /* Set a consistent font size */
-    line-height: 1;   /* Set a consistent line height */
-    height: 40px;     /* Define a specific height */
-    border-radius: 4px;
-    outline: none;
-}
-
-.search-field {
-    flex-grow: 1;       /* Allow the text box to grow and use available space */
-    padding: 10px 15px; /* Padding for the text box */
-    border: 1px solid #ccc;
-    border-right: none; /* Remove right border to blend with the button */
-}
-
-/* Reset the appearance of the button */
-.search-submit {
-    background-color: #4CAF50; /* Green background color */
-    color: white; /* White text color */
-    padding: 10px 20px; /* Some padding for space */
-    border: none; /* Remove default borders */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer when hovering */
-    transition: 0.3s; /* Transition effect for hover */
-    font-weight: bold; /* Bold font */
-    outline: none; /* Remove focus outline */
-}
-
-/* Hover effect */
-.search-submit:hover {
-    background-color: #45a049; /* A darker green on hover */
-}
 
 /* Blog snippet styling */
 /* Blog Post Title Styles */
