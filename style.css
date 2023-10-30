@@ -10,6 +10,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: your-theme-text-domain
 */
 
+/* Basic Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* or whatever default font you want */
+}
+
 /* Reset hyperlink underlining */
 a {
     text-decoration: none;
@@ -17,10 +29,8 @@ a {
 
 /* Main header styles */
 .header-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px 20px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .title-search-container {
@@ -63,14 +73,12 @@ a {
 }
 
 /* Styling for the main navigation */
+.main-content {
+    margin: 0 20px;
+}
 
 .main-navigation {
-    display: flex;
-    justify-content: space-between; /* This will push the menu to the left and search to the right */
-    align-items: center; /* This will vertically center align the items */
-    background-color: #4CAF50; /* Green background as per your request */
-    padding: 10px 20px; /* Some spacing around the navbar */
-    width: 100%; /* Ensure the navbar takes the full width */
+    flex-wrap: wrap;
 }
 
 .header-menu-list {
