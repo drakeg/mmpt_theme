@@ -17,8 +17,36 @@ Text Domain: your-theme-text-domain
     box-sizing: border-box;
 }
 
+/* Logo background styling */
 body {
-    font-family: 'Open Sans', sans-serif; /* or whatever default font you want */
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: #f4f4f4;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(244, 244, 244, 0.95);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Green accent styling */
+a, .btn, .highlight {
+    color: #45a049; /* Replace with your logo's green color code */
+}
+
+a:hover, .btn:hover {
+    color: #4CAF50; /* A slightly darker shade for hover effects. Replace accordingly. */
 }
 
 /* Reset hyperlink underlining */
@@ -29,12 +57,6 @@ a {
 /* Main header styles */
 .header-inner {
     max-width: 100%;
-}
-
-.nav-search-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .title-description-container {
@@ -201,37 +223,6 @@ div {
 .wp-pagenavi span.current {
     color: #ffffff; /* White color for the text of the current page number */
     background-color: #45a049; /* Darker green background for the current page number */
-}
-
-/* Logo background styling */
-body {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    background-attachment: fixed;
-    background-color: #f4f4f4;
-}
-
-body::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(244, 244, 244, 0.95);
-    pointer-events: none;
-    z-index: -1;
-}
-
-/* Green accent styling */
-a, .btn, .highlight {
-    color: #45a049; /* Replace with your logo's green color code */
-}
-
-a:hover, .btn:hover {
-    color: #4CAF50; /* A slightly darker shade for hover effects. Replace accordingly. */
 }
 
 /* Mobile Styles */
