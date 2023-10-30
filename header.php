@@ -20,7 +20,7 @@
             <!-- Navigation & Search -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <!-- Navbar content -->
-                <div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
