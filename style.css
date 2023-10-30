@@ -68,36 +68,39 @@ a {
     margin-top: 15px;  /* Adding some top margin for separation */
 }
 
-/* Adjusting Navbar Menu Items Color */
-.header-menu-list li a {
-    color: #333; /* Changing from white to a dark color for visibility */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+/* Menu container styling */
+.header-menu-list {
+    list-style-type: none;  /* Remove default list styles */
+    padding: 0;  /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    display: flex;  /* Make the list items display horizontally */
+    align-items: center;  /* Align the items vertically in the center */
+    justify-content: center;  /* Center the list items horizontally */
 }
 
-/* Adjusting Navbar Menu Items Hover Color */
-.header-menu-list li a:hover {
-    color: #4CAF50; /* Green color from your theme for hover */
-    background-color: transparent; /* Remove the #555 background on hover */
+/* Individual menu items styling */
+.header-menu-list li {
+    margin: 0 10px;  /* Some space between each menu item */
 }
 
-/* Adjusting Navbar Menu Current Item Color */
-.header-menu-list li.current-menu-item a {
-    color: #4CAF50; /* Green color from your theme for the active menu item */
-}
-
-/* Adjusting Navbar Submenu */
+/* Reset for submenu to appear vertically */
 .header-menu-list li ul.sub-menu {
-    background-color: #f4f4f4; /* Light gray background for submenu */
-    border: 1px solid #e0e0e0; /* Border for submenu */
+    display: none;  /* Hide the submenu by default */
+    position: absolute;  /* To show submenu above other content */
+    top: 100%;  /* Position submenu right below the main menu item */
+    left: 0;  /* Align submenu to the left of the main menu item */
+    list-style-type: none;  /* Remove default list styles */
+    padding: 0;  /* Remove default padding */
+    flex-direction: column;  /* Make the submenu items display vertically */
 }
 
-.header-menu-list li ul.sub-menu a {
-    color: #333; /* Dark color for submenu items */
+.header-menu-list li:hover ul.sub-menu {
+    display: flex;  /* Show the submenu when hovering over a menu item */
 }
 
-.header-menu-list li ul.sub-menu a:hover {
-    color: #4CAF50; /* Green color from your theme for submenu hover */
-    background-color: #e8e8e8; /* Slightly darker background for submenu hover */
+/* Styling for submenu items */
+.header-menu-list li ul.sub-menu li {
+    margin: 0;  /* Reset margin for submenu items */
 }
 
 .search-container {
