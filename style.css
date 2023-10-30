@@ -107,11 +107,6 @@ a {
 }
 
 /* Styling for the search container */
-
-.search-container {
-    margin-left: auto; /* This will push the search to the right end of the navbar */
-}
-
 .search-container form {
     display: flex;
 }
