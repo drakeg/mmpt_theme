@@ -32,9 +32,7 @@
                     ));
                     ?>
                     <!-- Search Form -->
-                    <div class="search-container">
-                        <?php get_search_form(); ?>
-                    </div>
+                    <?php get_search_form(); ?>
                 </div>
             </nav>
         </div>
