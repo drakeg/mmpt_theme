@@ -94,6 +94,7 @@ a {
 /* Navbar styling (override Bootstrap) */
 .navbar {
     padding: 0.5rem 1rem; /* Adjust these values as per your requirement */
+    background: transparent;
 }
 
 .navbar-dark .navbar-nav .nav-link {
