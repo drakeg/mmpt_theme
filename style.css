@@ -106,43 +106,6 @@ a {
     box-shadow: 0 0 15px #fff; /* Creates a glow effect on hover */
 }
 
-/* Styling for the search container */
-.search-container form {
-    display: flex;
-}
-
-.search-container input[type="text"] {
-    padding: 5px 10px; /* Makes the search box taller and more visible */
-    font-size: 1em; /* Adjusts the font size of the search input */
-    border: none; /* Removes default borders */
-    border-radius: 3px 0 0 3px; /* Rounded corners on the left side */
-    background-color: #fff; /* White background for the search input */
-    color: #4CAF50; /* Green text to match the navbar background */
-}
-
-.search-container input[type="submit"] {
-    background-color: #fff; /* White background for the search icon button */
-    border: none; /* Removes default borders */
-    cursor: pointer; /* Indicates it's clickable */
-    border-radius: 0 3px 3px 0; /* Rounded corners on the right side */
-    color: #4CAF50; /* Green color to match the navbar background */
-}
-
-/* On hover, make the search button slightly opaque */
-.search-container input[type="submit"]:hover {
-    opacity: 0.8;
-}
-
-.search-container.active {
-    display: flex; /* Show search container when active */
-}
-
-.search-icon {
-    display: none;
-    cursor: pointer;
-}
-
-
 /* Blog snippet styling */
 /* Blog Post Title Styles */
 .post-card h2 a {
