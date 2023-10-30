@@ -63,9 +63,13 @@ a {
 }
 
 .main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: transparent; /* Removing the #333 background color */
     text-align: center; /* Centering the menu items */
     margin-top: 15px;  /* Adding some top margin for separation */
+    padding: 10px 20px;
 }
 
 /* Menu container styling */
@@ -81,6 +85,18 @@ a {
 /* Individual menu items styling */
 .header-menu-list li {
     margin: 0 10px;  /* Some space between each menu item */
+}
+
+.header-menu-list li a {
+    color: green;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.header-menu-list li a:hover {
+    background-color: lightgreen;
 }
 
 /* Reset for submenu to appear vertically */
