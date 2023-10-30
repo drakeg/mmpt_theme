@@ -29,11 +29,11 @@
                         'fallback_cb'    => false
                     ));
                     ?>
+                    <!-- Search Form -->
+                    <div class="search-container">
+                        <?php get_search_form(); ?>
+                    </div>
                 </nav>
-                <!-- Search Form -->
-                <div class="search-container">
-                    <?php get_search_form(); ?>
-                </div>
             </div>
         </div>
     </header>
